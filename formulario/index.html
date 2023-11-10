@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <form id="meuFormulario">
+        <input type="text" name="campo1" value="Valor 1">
+        <input type="text" name="campo2" value="Valor 2">
+        <input type="text" name="campo3" value="Valor 3">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        // Obtém o formulário
+        var formulario = document.getElementById("meuFormulario");
+
+        // Adiciona um ouvinte de evento para o envio do formulário
+        formulario.addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Obtém todos os elementos de entrada do formulário
+            var elementos = formulario.elements;
+
+            // Itera sobre os elementos do formulário
+            for (var i = 0; i < elementos.length; i++) {
+                var elemento = elementos[i];
+
+                // Verifica se o elemento é um campo de entrada
+                if (elemento.type !== "submit") {
+                    // Exibe o nome do campo e o valor
+                    console.log("Nome do campo: " + elemento.name);
+                    console.log("Valor do campo: " + elemento.value);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
