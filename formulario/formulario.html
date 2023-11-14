@@ -1,57 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSS externo - Formulario 25/04, 08/05</title>
-    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Contato</title>
 </head>
 <body>
-    <header><!--cabeçalho-->
-        
-    </header>
-    
-    <main><!--meio-->
-        <section class="box">
-            <form class="formulario" id="meu-formulario">
-                <fieldset>
-                    <legend><strong>Formulário de Clientes</strong></legend>
-                    <br>
+    <div id="contact-form">
+        <h1>Entre em Contato</h1>
+        <form id="customer-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
 
-                    <section class="inputBox">
-                        <label for="nome" class="labelinput">Nome completo:</label><br>
-                        <input type="text" name="nome" id="nome" class="InputUser" required>
-                    </section>
-                    
-                    <br> <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
 
-                    <section class="inputBox">
-                        <label for="email" class="labelinput">Email:</label><br>
-                        <input type="text" name="email" id="email" class="InputUser" required placeholder="seuemail@dominio.com">
-                    </section>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
 
-                    <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 
-                    <section class="inputBox">
-                        <label for="telefone" class="labelinput">Telefone:</label><br>
-                        <input type="tel" name="telefone" id="telefone" class="InputUser" required placeholder="(DDD)XXXXX-XXXX">
-                    </section>
+    <div id="customer-details" style="display: none;">
+        <h1>Dados do Cliente</h1>
+        <p id="customer-name"></p>
+        <p id="customer-email"></p>
+        <p id="customer-message"></p>
+        <p>Email de contato enviado!</p>
+    </div>
 
-                    <br> <br>
-
-                    <section class="inputBox"> 
-                        <label for="Mensagem" class="labelinput">Mensagem:</label><br>
-                        <input type="text" name="Mensagem" size="50" id="Mensagem"/> 
-                    </section>
-                    <br> <br>
-                    <input type="submit" value="Enviar formulario" id="enviar">
-                </fieldset>
-            </form>
-        </section>
-    </main>
-
-    <footer><!--rodapé-->
-        
-    </footer>
-    <script src="/script/script_form.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
