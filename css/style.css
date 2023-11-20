@@ -39,17 +39,12 @@ body {
 }
 
   .cabecalho .nav_bar{
-    display: block;
     text-align: end;
     color: black;
     position: relative;
     margin-top: 150px;
-    text-decoration: none;
-  }
-
-  .cabecalho .nav_bar .a{
-    text-decoration: none;
-  }
+    cursor: pointer;
+  } 
 
   .selecao_bolos .titulo_cardapio{
     position: relative;
