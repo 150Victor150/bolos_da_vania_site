@@ -90,7 +90,10 @@ body {
     width: 290px;
     height: 390px;
     background-color: #F5F5DC;
+
   }
+
+
 
   .fotos{
     vertical-align: middle;
@@ -116,14 +119,17 @@ body {
 } 
 
 .rodape{
-  text-align: end;
+  text-align: center;
   color: white;
   height: 100px;
   background-color: #41271f;
   padding: 8px;
 }
 
+
+
 /*
+
   
 #foto_bolo_chocolate{
     margin-top: 25px;
