@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style_slides.css">
+    <link rel="stylesheet" href="./css/style_cabeçalho.css">
 
     <title>Projeto Site de bolos</title>
 </head>
@@ -17,42 +18,46 @@
     </header>
     
     <main class="selecao_bolos"><!--TELA INCIAL BOLOS-->
-        <h1 class="titulo_cardapio">CARDAPIO DE BOLOS</h1>
+        <br><br>
         <div class="slider">
-                <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                </div>
-                <div class="slide first">
-                    <img src="./imagens/slide1.jpg" alt="imagem 1">
-                </div>
-                <div class="slide">
-                    <img src="./imagens/slide2.jpg" alt="imagem 2">
-                </div>
-                <div class="slide">
-                    <img src="./imagens/slide3.PNG" alt="imagem 3">
-                </div>
-                <div class="slide">
-                    <img src="./imagens/slide4.jpg" alt="imagem 4">
-                </div>
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+            
+            <div class="slide first">
+                <img src="./imagens/slide1.jpg" alt="imagem 1">
+            </div>
+            <div class="slide">
+                <img src="./imagens/slide2.jpg" alt="imagem 2">
+            </div>
+            <div class="slide">
+                <img src="./imagens/slide3.PNG" alt="imagem 3">
+            </div>
+            <div class="slide">
+                <img src="./imagens/slide4.jpg" alt="imagem 4">
+            </div>
 
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-                    
-        </div>
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-        </div>
-        </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+                
+    </div>
+    <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+    </div>
+    </div>
+
+
+        <h1 class="titulo_cardapio">CARDAPIO DE BOLOS</h1>
+        
         <section class="bolos">
             <ul class="cardapio">
                 <li class="bolo" id="bolo_chocolate">
@@ -92,5 +97,6 @@
         <p>Contato Email: contato_bolo_da_vania@gmail.com</p>
     </footer>
     <script src="./script/script.js"></script>
+    <script src="./script/script_slider.js"></script>
 </body>
 </html>
