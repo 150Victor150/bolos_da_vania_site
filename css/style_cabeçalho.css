@@ -7,13 +7,25 @@
     border-bottom: 2px solid black;
     justify-content: space-between;
     padding: 0 10%;
+
 }
 
 .logo{
     width: 150px;
 }
 
-.nav_bar{
-    gap: 25px;
+.titulo{
+    font-size: 90px;
+    letter-spacing: 3px;
+    text-transform: uppercase;  
 }
 
+.nav_bar{
+    text-decoration: none;
+    color: black;
+    gap: 35px;
+}
+
+.cabecalho .rede_social{
+    width: 45px;
+}

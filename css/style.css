@@ -51,7 +51,7 @@ body {
     text-align: center;
   }
 
-  .bolos {
+  .bolos {  
     display: flex;
     align-items: center;
     gap: 30px;
